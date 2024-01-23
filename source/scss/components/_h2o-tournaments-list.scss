@@ -1,0 +1,16 @@
+.h2o-tournaments-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px 24px;
+
+    @include small-tablet{
+        grid-template-columns: 1fr;
+        grid-gap: clamp(20px, 6.510vw, 50px);
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+}

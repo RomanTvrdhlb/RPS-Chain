@@ -1,0 +1,9 @@
+.h2o-partners-section{
+    padding-bottom:clamp(10px, 2.1583vw, 30px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+}

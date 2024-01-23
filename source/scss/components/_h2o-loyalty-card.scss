@@ -1,0 +1,79 @@
+.h2o-loyalty-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 5px;
+    position: relative;
+    min-height: clamp(270px, 31.250vw, 320px);
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid var(--br-e);
+    background-color: #173D4C;
+    background-size: 60px 60px;
+    background-image: linear-gradient(45deg, #153746 25%, transparent 25%, transparent 75%, #153746 75%, #153746),linear-gradient(-45deg, #153746 25%, transparent 25%, transparent 75%, #153746 75%, #153746);
+    box-shadow: inset 0 3px 3px #327995, inset 0 -3px 3px #0E2731;
+    
+
+    &:before {
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        inset: 3px;
+        border: 2px solid var(--br-f);
+        border-radius: 9px;
+    }
+
+    &__image{
+        padding: clamp(10px, 1.7266vw, 24px) 0 5px;
+        display: flex;
+        width: 100%;
+        img,picture{
+            width: 100%;
+            height: clamp(100px, 9.0647vw, 126px);
+            object-fit: contain;
+        }
+    }
+
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 4px;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 6px;
+
+        &--mode{
+            opacity: 0.5;
+            filter: grayscale(1);
+        }
+    }
+
+    &__title{
+        color: rgba(var(--cl-a),1.0);
+        font-size: 14px;
+        font-family: var(--font-family);
+        line-height: 100%;
+    }
+
+    &__value{
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        color: rgba(var(--cl-a),1.0);
+        font-size: clamp(18px, 1.4388vw, 20px);
+        font-family: var(--font-family);
+        line-height: 100%;
+    }
+
+    &__info{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+}

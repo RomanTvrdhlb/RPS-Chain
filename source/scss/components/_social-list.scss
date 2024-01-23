@@ -1,0 +1,29 @@
+.social-list{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: clamp(40px, 6.3702vw, 106px);
+
+    &__link{
+        width: clamp(71px, 8.774vw, 146px);
+        height: clamp(71px, 8.774vw, 146px);
+        padding: clamp(16px, 2.5841vw, 43px) clamp(14px, 2.2837vw, 38px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 19.113px;
+        border: 3.916px solid var(--br-d);
+        background: rgba(var(--bg-e),1.0);
+        box-shadow: 0px 0px 10px 0px #0E88C4;
+
+        svg{
+            width: 100%;
+            height: auto;
+        }
+
+        @include ios{
+            width: clamp(54px, 17.150vw, 71px);
+            height: clamp(54px, 17.150vw, 71px);
+        }
+    }
+}

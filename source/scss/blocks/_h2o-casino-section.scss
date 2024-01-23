@@ -1,0 +1,14 @@
+.h2o-casino-section{
+padding-bottom:  clamp(25px, 2.518vw, 35px);
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(16px, 3.4532vw, 48px);
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(16px, 1.295vw, 18px);
+    }
+}

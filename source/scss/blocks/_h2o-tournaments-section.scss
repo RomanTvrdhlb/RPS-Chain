@@ -1,0 +1,15 @@
+.h2o-tournaments-section{
+    padding: 10px 0 clamp(12px, 24px, 24px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(16px, 1.7266vw, 24px); 
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(16px, 1.7266vw, 24px); 
+    }
+}

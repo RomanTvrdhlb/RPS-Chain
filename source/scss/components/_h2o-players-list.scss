@@ -1,0 +1,8 @@
+.h2o-players-list{
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-gap: 24px;
+    display: grid;
+    padding-bottom: 14px;
+
+    border-bottom: 2px solid var(--br-g);
+}

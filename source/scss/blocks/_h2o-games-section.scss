@@ -1,0 +1,33 @@
+.h2o-games-section{
+    padding-bottom: clamp(40px, 4.8921vw, 68px);
+    position: relative;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 12px;  
+    }
+
+
+    &__top{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 6px;
+
+        .h2o-search{
+            grid-column: 3/5;
+        }
+
+        @include small-tablet{
+            grid-template-columns: repeat(2, 1fr);
+
+            .h2o-search{
+                grid-column: 1/-1;
+            }
+        }
+    }
+    
+    .h2o-main-top{
+        padding-bottom: 6px;
+    }
+}   

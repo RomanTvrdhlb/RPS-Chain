@@ -1,0 +1,12 @@
+.h2o-tutorial-list{
+    background: rgba(var(--bg-h),1.0);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 24px;
+    grid-gap: 15px clamp(20px, 2.5899vw, 36px);
+    border-radius: 16px;
+
+    @include small-tablet{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

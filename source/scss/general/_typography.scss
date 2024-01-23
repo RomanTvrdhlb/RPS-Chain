@@ -1,0 +1,25 @@
+.logo{
+  width: clamp(68px, 12.3197vw, 205px);
+  height: clamp(35px, 6.4904vw, 108px);
+}
+
+.yellow-text{
+  color: rgba(var(--cl-d),1.0);
+  font-size: inherit;
+  font-family: inherit;
+  font-style: inherit;
+}
+
+.main-title{
+  color: rgba(var(--cl-c),1.0);
+  font-family: var(--font-family);
+  font-size: clamp(24px, 4.3269vw, 72px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+  text-transform: uppercase;
+
+  &--yellow{
+    color: rgba(var(--cl-d),1.0);
+  }
+}

@@ -1,0 +1,28 @@
+.h2o-main-top {
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+
+  &__title {
+    font-size: clamp(18px, 26px, 26px);
+    line-height: normal;
+    font-weight: 400;
+    color: rgba(var(--cl-a), 1);
+    font-family: var(--font-family);
+  }
+
+  &__link {
+    margin-top: 5px;
+    font-family: var(--font-family);
+    font-style: normal;
+    cursor: pointer;
+    text-decoration-line: underline;
+    transition: all 0.1s linear;
+    color: rgba(var(--cl-c),1.0);
+
+    &:hover{
+      color: rgba(var(--cl-d),1.0);
+      text-decoration-color: rgba(var(--cl-a),0.0);
+    }
+  }
+}

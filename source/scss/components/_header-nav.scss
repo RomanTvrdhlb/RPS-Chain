@@ -1,0 +1,49 @@
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-gap: clamp(37px, 5.4087vw, 90px);
+
+    &__link{
+        color: rgba(var(--cl-c),1.0);
+        font-family: var(--font-family);
+        font-size: clamp(16px, 1.4423vw, 24px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 149.575%;
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+
+        i{
+            margin-bottom: -5px;
+
+            svg{
+                fill: rgba(var(--cl-c),1.0);
+            }
+        }
+
+        
+        &.active{
+            color: rgba(var(--cl-d),1.0);
+            -webkit-text-stroke-width: 1;
+            -webkit-text-stroke-color: #000;
+
+            i{
+                svg{
+                    fill: rgba(var(--cl-d),1.0);
+                }
+            }
+        }
+
+        &:hover{
+            color: rgba(var(--cl-d),1.0);
+
+            i{
+                svg{
+                    fill: rgba(var(--cl-d),1.0);
+                }
+            }
+        }
+    }
+}

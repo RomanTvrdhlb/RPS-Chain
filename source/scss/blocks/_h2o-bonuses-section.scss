@@ -1,0 +1,15 @@
+.h2o-bonuses-section{
+    padding-bottom: clamp(30px, 2.8777vw, 40px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 1.7266vw, 24px);
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+    }
+}

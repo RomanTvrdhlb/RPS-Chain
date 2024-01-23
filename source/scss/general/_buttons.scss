@@ -1,0 +1,36 @@
+.main-button {
+  color: rgba(var(--cl-c),1.0);
+  font-family: var(--font-family);
+  font-size: clamp(16px, 2.1034vw, 35px);
+  font-style: normal;
+  font-weight: 6 00;
+  line-height: normal;
+  display: flex;
+  height: 72px;
+  padding: clamp(10.8px, 1.5024vw, 25px) clamp(14.7px, 2.0433vw, 34px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--br-a);
+  background: var(--gr-a);
+
+  &:hover {
+    background-color: rgba(var(--bg-d),1.0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

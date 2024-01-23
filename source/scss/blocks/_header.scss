@@ -1,0 +1,34 @@
+.header{
+  position: relative;
+  padding: clamp(8px, 2.4038vw, 40px) 0;
+  background-color: rgba(var(--bg-c),1.0);
+
+  &__box{
+   display: grid;
+   align-items: center;
+   grid-gap: clamp(37px, 5.4087vw, 90px);
+   grid-template-columns: auto 1fr auto; 
+
+   @include tablet{
+    grid-template-columns: repeat(2, auto);
+   }
+  }
+
+  .main-button{
+    padding: clamp(10.8px, 1.5024vw, 25px) clamp(25px, 4.2668vw, 71px);
+  }
+
+  @include tablet{
+
+    .header-nav{
+      display: none;
+    }
+    
+    .main-button{
+      display: none;
+    }
+  }
+}
+
+
+
