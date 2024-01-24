@@ -16,7 +16,7 @@
   background: var(--gr-a);
   position: relative;
 
-  @include gradient-border(linear-gradient(160deg, #FFF8BA 0%, #FFA900 100%), 2px);
+  @include gradient-border(linear-gradient(180deg, #FFF8BA 0%, #FFA900 100%), 2px);
 
   &::after{
     position: absolute;

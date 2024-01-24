@@ -64,4 +64,29 @@
     @include mobile{
         padding: clamp(20px, 9.6154vw, 160px) 0 clamp(48px, 9.6154vw, 160px);
     }
+
+
+    &--mode{
+        padding: clamp(20px, 5.4087vw, 90px) 0 clamp(20px, 4.8077vw, 80px);
+        .main-text{
+            grid-gap: clamp(20px, 2.4038vw, 40px);
+
+            p{
+                font-size: clamp(11px, 1.5024vw, 25px);
+            }
+        }
+        .first-section{
+            &__box{
+                grid-template-columns: 1fr;
+                justify-items: center;
+                grid-gap: clamp(20px, 4.8077vw, 80px);
+            }
+
+           
+        }
+
+        &::after{
+            transform: translate(-50%, -64%);
+        }
+    }
 }

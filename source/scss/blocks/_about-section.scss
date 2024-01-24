@@ -1,0 +1,31 @@
+.about-section{
+    position: relative;
+    padding-bottom: clamp(48px, 4.8077vw, 80px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(32px, 2.4038vw, 40px);
+        align-items: center;
+
+        .main-text{
+            &:nth-child(2){
+                @include mobile{
+                    margin-top: -12px;
+                }  
+            }
+        }
+
+        
+    }
+
+    .main-title{
+        padding-bottom: clamp(0px, 2.4038vw, 40px);
+
+        @include mobile{
+            padding-bottom: 0;
+        }
+    }
+
+    
+}
