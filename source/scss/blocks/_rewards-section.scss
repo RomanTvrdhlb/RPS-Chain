@@ -1,0 +1,74 @@
+.rewards-section{
+    position: relative;
+    padding: clamp(62px, 9.6154vw, 160px) 0;
+
+    &__box{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr clamp(277px, 38.5216vw, 641px);
+        grid-gap: clamp(26px, 6.0096vw, 100px);
+        
+        @include mobile{
+            grid-gap: 0;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .main-top{
+
+        &__about{
+            grid-gap: clamp(20px, 2.4038vw, 40px);
+        max-width: 870px;
+
+        p{
+            &:nth-child(2){
+                max-width: 715px;
+            }
+        }
+        }
+
+    @include mobile{
+        order: 2;
+        grid-gap: clamp(16px, 3.472vw, 20px);
+
+        .main-button{
+            margin-top: 6px;
+        }
+    }
+
+    @include ios{
+        .main-button{
+            margin-top: 0;
+            order: 4;
+        }
+    }
+}
+
+&__bg{
+    position: absolute;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    top: 3%;
+    z-index: -1;
+    img,picture{
+        width: 100%;
+        height: auto;
+    }
+
+    @include desktop{
+        top: 7%;
+    }
+
+    @include mobile{
+        display: none;
+    }
+}
+
+&__image{
+   @include ios{
+    margin-top: -18px;
+    margin-bottom: -25px;
+   }
+}
+}

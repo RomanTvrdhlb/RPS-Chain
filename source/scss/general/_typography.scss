@@ -22,4 +22,35 @@
   &--yellow{
     color: rgba(var(--cl-d),1.0);
   }
+
+  i,b{
+    font-style: inherit;
+    font-weight: inherit;
+  }
+
+  @include mobile{
+    font-size: clamp(24px, 5.556vw, 32px);
+  }
+}
+
+.border-text{
+  max-height: clamp(14px, 2.0433vw, 34px);
+  padding: 2px clamp(7px, .7813vw, 13px);
+  margin-left: 10px;
+  position: relative;
+  bottom: 9px;
+  width: fit-content;
+  border-radius: 16px;
+  border: 1px solid var(--br-g);
+  background: var(--gr-e);
+  backdrop-filter: blur(37px);
+  text-transform: none;
+  gap: 10px;
+  color: rgba(var(--cl-g),1.0);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: clamp(8.692px, 1.2019vw, 20px);
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal !important;
 }
