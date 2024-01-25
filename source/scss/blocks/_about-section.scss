@@ -27,5 +27,17 @@
         }
     }
 
-    
+    &--mode{
+        padding-bottom: clamp(48px, 9.6154vw, 160px);
+        .about-section__box{
+            align-items: flex-start;
+            grid-gap: clamp(20px, 3.2452vw, 54px);
+        }
+
+        .main-text{
+            &:nth-child(2){
+                    margin-top: 0;
+            }
+        }
+    }
 }

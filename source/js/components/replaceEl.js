@@ -2,11 +2,9 @@ import vars from "../_vars";
 import { throttle } from "../functions/throttle";
 
 const {
- rewardsImage,rewardsParent,table, tableParent
+ rewardsImage,rewardsParent,table, tableParent, referralImage, referralParent, firstImage, firstParent
 } = vars;
 
-const rewardsParentMob = rewardsParent.querySelector('.main-top'),
-      tableParentMob = tableParent.querySelector('.main-top');
 const replaceElementsFunction = (
   element,
   parentDesktop,
@@ -27,53 +25,124 @@ const replaceElementsFunction = (
   }
 };
 
+if(firstParent){
+  const firstParentMob = firstParent.querySelector('.main-top');
+
+  window.addEventListener("resize", () => {
+    throttle(
+      replaceElementsFunction(
+        firstImage,
+        firstParent,
+        firstParentMob,
+        576,
+        "afterbegin",
+        "beforeend"
+      )
+    );
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    throttle(
+      replaceElementsFunction(
+        firstImage,
+        firstParent,
+        firstParentMob,
+        576,
+        "afterbegin",
+        "beforeend"
+      )
+    );
+  });
+}
+
+
+if(rewardsParent){
+  const rewardsParentMob = rewardsParent.querySelector('.main-top');
+
+  window.addEventListener("resize", () => {
+    throttle(
+      replaceElementsFunction(
+        rewardsImage,
+        rewardsParent,
+        rewardsParentMob,
+        414,
+        "beforeend",
+        "beforeend"
+      )
+    );
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    throttle(
+      replaceElementsFunction(
+        rewardsImage,
+        rewardsParent,
+        rewardsParentMob,
+        414,
+      "beforeend",
+      "beforeend"
+      )
+    );
+  });
+}
+
+if(tableParent){
+  const tableParentMob = tableParent.querySelector('.main-top');
+
+  window.addEventListener("resize", () => {
+    throttle(
+      replaceElementsFunction(
+        table,
+        tableParent,
+        tableParentMob,
+        414,
+      "beforeend",
+      "afterbegin"
+      )
+    );
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    throttle(
+      replaceElementsFunction(
+        table,
+        tableParent,
+        tableParentMob,
+        414,
+      "beforeend",
+      "afterbegin"
+      )
+    );
+  });
+}
+
+if(referralParent){
+const referralParentMob = referralParent.querySelector('.main-top');
+
 window.addEventListener("resize", () => {
   throttle(
     replaceElementsFunction(
-      rewardsImage,
-      rewardsParent,
-      rewardsParentMob,
-      414,
-      "beforeend",
-      "beforeend"
-    )
-  );
-  throttle(
-    replaceElementsFunction(
-      table,
-      tableParent,
-      tableParentMob,
-      414,
-    "beforeend",
-    "afterbegin"
-    )
-  );
-});
-window.addEventListener("DOMContentLoaded", () => {
-  throttle(
-    replaceElementsFunction(
-      rewardsImage,
-      rewardsParent,
-      rewardsParentMob,
-      414,
+      referralImage,
+      referralParent,
+      referralParentMob,
+      768,
     "beforeend",
     "beforeend"
     )
   );
+});
+
+window.addEventListener("DOMContentLoaded", () => {
   throttle(
     replaceElementsFunction(
-      table,
-      tableParent,
-      tableParentMob,
-      414,
+      referralImage,
+      referralParent,
+      referralParentMob,
+      768,
     "beforeend",
-    "afterbegin"
+    "beforeend"
     )
   );
 });
+}
 
-
-// 'beforebegin': перед самим элементом targetElement.
-// 'afterbegin': внутри элемента targetElement, перед его первым потомком.
-// 'beforeend': внутри элемента targetElement, после его последнего потомка.
-// 'afterend': после самого элемента targetElement.

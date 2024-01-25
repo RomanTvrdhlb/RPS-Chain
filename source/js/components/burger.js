@@ -2,8 +2,19 @@ import { disableScroll } from '../functions/disable-scroll';
 import { enableScroll } from '../functions/enable-scroll';
 import vars from '../_vars';
 
-import {toggleCustomClass, removeCustomClass} from '../functions/customFunctions';
-const {overlay, burger, mobileMenu, header} = vars;
+import {toggleCustomClass, removeCustomClass, addCustomClass, removeClassInArray} from '../functions/customFunctions';
+const {overlay, burger, mobileMenu, header, navLinks} = vars;
+
+const currentPage = window.location.pathname.slice(1);
+
+if(navLinks){
+  navLinks.forEach(function(link) {
+      const value = link.getAttribute('href');
+      if (currentPage === value) { 
+        addCustomClass(link);
+      }
+  });
+}
 
 const mobileMenuHandler = function(overlay, mobileMenu, burger) {
     burger.addEventListener('click', function(e){

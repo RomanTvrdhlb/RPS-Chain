@@ -1,0 +1,40 @@
+.referral-section{
+    padding: clamp(20px, 9.6154vw, 160px) 0;
+
+    &__box{
+        display: grid;
+        grid-template-columns: .9fr 1fr;
+        align-items: center;
+        grid-gap: clamp(20px, 4.8077vw, 80px);
+
+        @include small-tablet{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .main-title{
+        font-size: clamp(24px, 3.750vw, 72px);
+
+        @include small-tablet{
+            order: 1;
+            font-size: clamp(24px, 4.948vw, 38px);
+        }
+    }
+
+    &__image{
+        @include small-tablet{
+            order: 2;
+        }
+    }
+
+    .main-top__about{
+        grid-gap: clamp(16px, 2.4038vw, 40px);
+
+        p{
+            font-size: clamp(11px, 1.5024vw, 25px);
+        }
+        @include small-tablet{
+                order: 3;
+        }
+    }
+}

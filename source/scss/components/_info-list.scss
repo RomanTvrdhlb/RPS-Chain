@@ -1,0 +1,58 @@
+.info-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 20px;
+
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+
+    &__item{
+        height: 100%;
+        &:first-child{
+            .info-card{
+                &:after{
+                    pointer-events: none;
+                    position: absolute;
+                    content: '';
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='342' height='28' fill='none'%3E%3Cpath stroke='%23F7F7F7' stroke-dasharray='12 18' stroke-linecap='round' stroke-width='2' d='M1 27c60.5524-19.4878 194.46-47.1795 340 0'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                    height: Min(1.5625vw, 26px);
+                    width: Min(20.4327vw, 340px);
+                    right: -10px;
+                    top: 9%;
+                    transform: translateX(50%);
+                }
+            }
+        }
+
+        &:nth-child(2){
+            .info-card{
+                &:after{
+                    pointer-events: none;
+                    position: absolute;
+                    content: '';
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='342' height='28' fill='none'%3E%3Cpath stroke='%23F7F7F7' stroke-dasharray='12 18' stroke-linecap='round' stroke-width='2' d='M1 1c60.5524 19.4878 194.46 47.1795 340 0'/%3E%3C/svg%3E"); background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                    height: Min(1.5625vw, 26px);
+                    width: Min(20.4327vw, 340px);
+                    right: -10px;
+                    top: 27%;
+                    transform: translateX(50%);
+                }
+            }
+        }
+
+        @include mobile{
+            .info-card{
+            &::after{
+                display: none;
+            }
+        }
+        }
+    }
+}

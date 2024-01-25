@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="referral-section">
+      <div class="container">
+        <div class="referral-section__box">
+          <div class="main-top">
+            <h1 class="main-title"><b class="yellow-text">On-chain </b><br>referral program</h1>
+            <div class="main-top__about">
+            <p>Invite new players to the "Rock Paper Scissors" peer-to-peer game and earn 0.5% lifetime share of the commission fees.</p>
+            <form action="#" class="referral-form">
+              <label for="wallet" class="referral-form__label">
+                <input type="text" id="wallet" class="referral-form__input" placeholder="Enter your wallet address">
+              </label>
+              <div class="referral-form__inner">
+                <label for="code" class="referral-form__label">
+                  <input type="text" id="code" class="referral-form__input">
+                </label>
+                <button class="copy-button">
+                  <svg width='25' height='25'>
+                    <use href='img/sprite/sprite.svg#copy'></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <p>You will receive a lifelong 0.5% commission from every bank your referral wins, instantly credited to your wallet.</p>
+          </div>
+          </div>
+
+          <div class="referral-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/index/people2.webp'>
+              <img width='825' height='619' src='img/index/people2.png' alt='image'>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <div class="info-section__box">
+          <ul class="info-list">
+            <li class="info-list__item">
+              <div class="info-card">
+                <span class="info-card__image">
+                  <img width='90' height='90' src="/img/sprite/link.svg" alt="image">
+                </span>
+                <div class="info-card__bottom">
+                  <span class="info-card__title"><b class="yellow-text">Create</b> Link</span>
+                  <p>Enter the wallet address where you'd like to receive your commission and create your referral link.</p>
+                </div>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="info-card">
+                <span class="info-card__image">
+                  <img width='90' height='90' src="/img/sprite/share.svg" alt="image">
+                </span>
+                <div class="info-card__bottom">
+                  <span class="info-card__title"><b class="yellow-text">Share</b> Across Platforms</span>
+                  <p>Share your link across social media and beyond. The more you share, the more you earn!</p>
+                </div>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="info-card">
+                <span class="info-card__image">
+                  <img width='90' height='90' src="/img/sprite/coins.svg" alt="image">
+                </span>
+                <div class="info-card__bottom">
+                  <span class="info-card__title"><b class="yellow-text">Watch</b> Commissions Roll In</span>
+                  <p>Sit back and enjoy perpetual commissions with every game. Your link is the key to a lifetime of earnings.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section--mode">
+      <div class="container">
+        <div class="about-section__box"> 
+          <div class="main-text">
+            <span class="main-subtitle">How it works?</span>
+            <ul class="counter-list">
+              <li class="counter-list__item">
+                <p>You have the right to place your referral link anywhere and however you like, pretty cool, right?</p>
+              </li>
+              <li class="counter-list__item">
+                <p>You will receive a lifelong 0.50% commission from every bank your referral wins, instantly credited to your wallet.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-text">
+            <span class="main-subtitle">Notes :</span>
+            <ul class="counter-list">
+              <li class="counter-list__item">
+                <p>This program will become active as soon as the beta version of the game is released. Stay tuned for updates.</p>
+              </li>
+              <li class="counter-list__item">
+                <p>A new player is defined as a unique wallet address that interacts with the smart contract for the first time.</p>
+              </li>
+              <li class="counter-list__item">
+                <p>Consider creating a separate wallet address to receive commissions. Since commissions are taken in any tokens users are playing with, handling them with a separate wallet can provide a clear history.</p>
+              </li>
+              <li class="counter-list__item">
+                <p>Please note that commissions can vary based on the specific blockchain the user interacts with. For example, if a user interacts with the Ethereum blockchain, your commission will be in Ethereum, as determined by the value set in the Ethereum smart contract. Essentially, the blockchain utilized for transactions by the player you refer determines the blockchain for your commissions, as well as the value set on this specific blockchain. This is due to the different architectures (L1/L2) and goals (Secure/Fast) of various blockchains.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-section">
+      <div class="container">
+        <div class="join-section__box">
+          <div class="join-section__top">
+            <h5 class="main-title"><b class="yellow-text">JOIN</b> OUR COMMUNITY</h5>
+            <p>Subscribe to our social networks. Don't miss exciting news, stay in touch.</p>
+          </div>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <svg width='70' height='59'>
+                  <use href='img/sprite/sprite.svg#tg'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <svg width='59' height='61'>
+                  <use href='img/sprite/sprite.svg#icon'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link">
+                <svg width='75' height='57'>
+                  <use href='img/sprite/sprite.svg#disc'></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/overlay.html')
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

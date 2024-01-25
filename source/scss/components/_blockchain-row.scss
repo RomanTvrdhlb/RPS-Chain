@@ -123,9 +123,14 @@
         font-weight: 400;
         line-height: 111.086%;
         font-size: clamp(11px, 1.2019vw, 20px);
+        transition: all .4s;
 
         @include mobile{
             font-size: clamp(8.113px, 1.910vw,11px);
+        }
+
+        &:hover{
+            color: rgba(var(--cl-i),0.6);
         }
     }
 

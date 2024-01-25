@@ -75,7 +75,7 @@
   flex-direction: column;
   grid-gap: clamp(14px, 1.9231vw, 32px);
   padding-bottom: clamp(32px, 2.4038vw, 40px);
-  border-bottom: 3px dashed #28265C;
+  border-bottom: 3px dashed var(--br-e);
 }
 
 .main-subtitle{

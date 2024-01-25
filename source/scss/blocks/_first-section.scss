@@ -7,21 +7,29 @@
         position: absolute;
         content: '';
         width: 100vw;
-        height: 234px;
+        height: clamp(50px, 14.0625vw, 234px);
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1;
+        z-index: 0;
     }
 
     &::before{
         bottom: -2%;
         background: var(--gr-c);
+
+        @include mobile{
+            display: none;
+        }
     }
 
     &::after{
         top: 0;
         transform: translate(-50%, -50%);
         background: var(--gr-d);
+
+        @include small-tablet{
+            top: -2%;
+        }
     }
 
     &__box{
@@ -29,21 +37,38 @@
         align-items: center;
         grid-template-columns: 1fr clamp(294px, 42.488vw, 707px);
         grid-gap: clamp(20px, 7.1514vw, 119px);
+
+        @include small-tablet{
+            grid-template-columns: 1fr .9fr;
+        }
+
+        @include mobile{
+            grid-template-columns: 1fr;
+        }
     }
 
     &__image{
         position: relative;
 
-        picture{
-            &:nth-child(2){
-                width: 960px;
+        &-bg{
+            width: Min(63.7019vw, 1060px);
+            height: Min(57.3317vw, 954px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            img,picture{
+                width: 100%;
                 height: auto;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                z-index: 1;
+                @include small-tablet{
+                    display: none;
+                }
             }
+        }
+
+        @include ios{
+            order: 3;
         }
     }
 
@@ -59,10 +84,22 @@
         width: 100%;
         height: 100%;
        }
+
+       @include mobile{
+        max-height: Min(100.694vw, 580px);
+        top: -3%;
+      
+    }
     }
 
     @include mobile{
-        padding: clamp(20px, 9.6154vw, 160px) 0 clamp(48px, 9.6154vw, 160px);
+        padding: clamp(20px, 14.419vw, 62px) 0 clamp(48px, 9.6154vw, 160px);
+    }
+
+    .main-button{
+        @include ios{
+            order: 4;
+        }
     }
 
 
@@ -82,6 +119,13 @@
                 grid-gap: clamp(20px, 4.8077vw, 80px);
             }
 
+
+            &__bg{
+                @include mobile{
+                    max-height: 358px;
+                    top: -2%;
+                }
+            }
            
         }
 

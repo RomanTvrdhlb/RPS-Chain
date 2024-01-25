@@ -1,0 +1,11 @@
+<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ic:outline-screen-share">
+<path id="Vector" d="M75 67.5C79.125 67.5 82.4625 64.125 82.4625 60L82.5 22.5C82.5 20.5109 81.7098 18.6032 80.3033 17.1967C78.8968 15.7902 76.9891 15 75 15H15C10.8375 15 7.5 18.3375 7.5 22.5V60C7.5 61.9891 8.29018 63.8968 9.6967 65.3033C11.1032 66.7098 13.0109 67.5 15 67.5H0V75H90V67.5H75ZM15 60V22.5H75V60.0375L15 60ZM48.75 34.2375C34.1625 36.2625 28.35 46.2375 26.25 56.25C31.4625 49.2375 38.325 46.05 48.75 46.05V54.2625L63.75 40.2375L48.75 26.25V34.2375Z" fill="url(#paint0_linear_413_4358)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_413_4358" x1="45" y1="15" x2="45" y2="75" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#4FB5FF"/>
+</linearGradient>
+</defs>
+</svg>

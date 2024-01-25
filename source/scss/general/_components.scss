@@ -1,39 +1,19 @@
 // ----------------- MAIN COMPONENTS -----------------
 @import "components/main-top.scss";
 @import "components/header-nav";
-@import "components/social-list";
-@import "components/blockchain-table";
-@import "components/blockchain-row";
+@import "components/referral-form";
 
-
-
-@import "components/h2o-accordion.scss";
-@import "components/h2o-main-box.scss";
-@import "components/h2o-main-slider.scss";
 // ----------------- MAIN COMPONENTS -----------------
 
 // ----------------- BLOCK COMPONENTS -----------------
-@import "components/h2o-jackpot-card";
-@import "components/h2o-tutorial-card";
-@import "components/h2o-players-block";
-@import "components/h2o-game-card.scss";
-@import "components/h2o-winner-card";
-@import "components/h2o-main-user";
-@import "components/h2o-bonus-card";
-@import "components/h2o-loyalty-card";
-@import "components/h2o-tournament-card";
-@import "components/h2o-player-card";
-@import "components/h2o-play-card";
+@import "components/info-card";
+@import "components/blockchain-row";
 // ----------------- BLOCK COMPONENTS -----------------
 
 // ----------------- GRID COMPONENTS -----------------
-@import "components/h2o-tutorial-list.scss";
-@import "components/h2o-games-list.scss";
-@import "components/h2o-partners-list.scss";
-@import "components/h2o-winners-list.scss";
-@import "components/h2o-bonuses-list.scss";
-@import "components/h2o-tournaments-list.scss";
-@import "components/h2o-players-list.scss";
+@import "components/blockchain-table";
+@import "components/social-list";
+@import "components/info-list";
 // ----------------- GRID COMPONENTS -----------------
 
 
