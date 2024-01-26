@@ -14,10 +14,12 @@
   border-radius: 8px;
   background: var(--gr-a);
   position: relative;
+  transition: all .2s ease;
 
   @include gradient-border(linear-gradient(180deg, #FFF8BA 0%, #FFA900 100%), 2px);
 
   &::after{
+    pointer-events: none;
     position: absolute;
     inset: 0;
     content: '';
@@ -27,6 +29,7 @@
   }
 
   &:hover {
+    transform: scale(1.05);
     &::after{
       opacity: 1;
       visibility: visible;
@@ -68,7 +71,7 @@
   border-radius: 8px;
   background: var(--gr-a);
   padding: clamp(10.5px, 1.4724vw, 24.5px) clamp(10.5px, 1.6827vw, 28px);
-
+  transition: all .2s ease;
   @include gradient-border(linear-gradient(180deg, #FFF8BA 0%, #FFA900 100%), 1.5px);
 
   svg{
@@ -87,6 +90,7 @@
   }
 
   &:hover {
+    transform: scale(1.05);
     &::after{
       opacity: 1;
       visibility: visible;

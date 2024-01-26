@@ -2,7 +2,8 @@
 @import "general/fonts";
 @import "general/mixins";
 @import "general/vars";
-@import "general/splide";
+// @import "general/splide";
+@import "../../node_modules/aos/dist/aos";
 // ------------------------------- second level
 @import "general/global";
 @import "general/typography";
