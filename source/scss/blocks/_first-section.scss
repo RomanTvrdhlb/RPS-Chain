@@ -49,6 +49,12 @@
 
     &__image{
         position: relative;
+        
+        img,picture{
+            max-height: 530px;
+            object-fit: contain;
+        }
+        
 
         &-bg{
             width: Min(63.7019vw, 1060px);
@@ -59,6 +65,7 @@
             transform: translate(-50%,-50%);
             z-index: -1;
             img,picture{
+                max-height: 100%;
                 width: 100%;
                 height: auto;
                 @include small-tablet{
@@ -70,9 +77,14 @@
         @include ios{
             order: 3;
         }
+
+        @include mobile{
+            margin: 4px 0 32px;
+        }
     }
 
     &__bg{
+        pointer-events: none;
        position: absolute;
        left: 0;
        right: 0;

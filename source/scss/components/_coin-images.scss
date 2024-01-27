@@ -5,6 +5,11 @@
     right: 0;
     bottom: 0;
 
+    &__wrapp{
+        display: flex;
+        transform: scale(1, -1);
+    }
+
     @include small-tablet{
         height: calc(clamp(190px, 37.1995vw, 619px) * 2);
     }
@@ -204,6 +209,190 @@
         100% {
           -webkit-transform: translateY(0);
           transform: translateY(0);
+        }
+    }
+}
+
+
+.first-section{
+    &__image{
+
+        .coin-images{
+            height: clamp(190px, 37.1995vw, 619px);
+
+            @include mobile{
+                height: 100%;
+            }
+        
+            &__item{
+            
+                &:nth-child(1){
+                    animation: float 10s linear infinite;
+         
+                    left: 38%;
+                    top: initial;
+                    bottom: 28%;
+                    rotate: -3deg;
+                    width: Min(4.2067vw, 70px);
+                    height: auto;
+        
+                    @include small-tablet{
+                        width: Min(4.2067vw, 70px);
+                    }
+
+                    @include mobile{
+                        bottom: 28%;
+                        width: calc(Min(4.2067vw, 70px) * 2);
+                    }
+                }
+                &:nth-child(2){
+                    animation: float 6s linear infinite;
+                    left: 47%;
+                    bottom: initial;
+                    width: Min(2.4038vw, 40px);
+                    height: auto;
+                    top: 20%;
+             
+        
+                    @include small-tablet{
+                        width: Min(2.4038vw, 40px);
+                    }
+        
+                    @include mobile{
+                        top: 15%;
+                        width: calc(Min(2.4038vw, 40px) * 2);
+                    }
+                }
+                &:nth-child(3){
+                    animation: float 7s linear infinite;
+            
+                    right: 31.5%;
+                    top: 28.5%;
+                    width: Min(4.6875vw, 78px);
+                    height: auto;
+        
+                    @include small-tablet{
+                        width: Min(4.6875vw, 78px);
+                    }
+        
+                    @include mobile{
+                        top: 19.5%;
+                        width: calc(Min(4.6875vw, 78px) * 2);
+                    }
+                }
+                &:nth-child(4){
+                    animation: float 12s linear infinite;
+          
+                    width: Min(3.7861vw, 63px);
+                    height: auto;
+                    bottom: initial;
+                    top: 29.5%;
+                    left: 36%;
+         
+                    @include small-tablet{
+                        width: Min(3.7861vw, 63px);
+                    }
+        
+                    @include mobile{
+                        top: 22%;
+                        width: calc(Min(3.7861vw, 63px) * 2);
+                    }
+                }
+                &:nth-child(5){
+                    animation: float 11s linear infinite;       
+          
+                    width: Min(5.4087vw, 90px);
+                    height: auto;
+                    left: 5%;
+                    bottom: initial;
+                    top: 21%;
+                    rotate: -3deg;
+        
+        
+                    @include small-tablet{
+                        width: Min(5.4087vw, 90px);
+                    }
+        
+                    @include mobile{
+                        top: 7%;
+                        width: calc(Min(5.4087vw, 90px) * 2);
+                    }
+                }
+                &:nth-child(6){
+                    animation: float 13s linear infinite;
+        
+                    right: 36%;
+                    top: initial;
+                    bottom: 32%;
+                    rotate: -3deg;
+                    width: Min(5.2284vw, 87px);
+                    height: auto;
+        
+                    @include small-tablet{
+                        width: Min(5.2284vw, 87px);
+                    }
+
+                    @include mobile{
+                        bottom: 35%;
+                        width: calc(Min(5.2284vw, 87px) * 2);
+                    }
+                }
+                &:nth-child(7){
+                    animation: float 5s linear infinite;
+                    right: 20.5%;
+                    bottom: 7.5%;
+                    top: initial;
+                    width: Min(2.4639vw, 41px);
+                    rotate: -3deg;
+                    height: auto;
+                   
+        
+                    @include small-tablet{
+                        width: Min(2.4639vw, 41px);
+                    }
+        
+                    @include mobile{
+                        width: calc(Min(2.4639vw, 41px) * 2);
+                    }
+        
+                    .coin-images__wrapp{
+                        transform: scale(-1, 1);
+                    }
+                }
+                &:nth-child(8){
+                    animation: float 6s linear infinite;
+                    left: 39%;
+                    top: initial;
+                    bottom: 14%;
+                    width: Min(3.6058vw, 60px);
+                    height: auto;
+        
+                    @include small-tablet{
+                        width: Min(3.6058vw, 60px);
+                    }
+
+                    @include mobile{
+                        width: calc(Min(3.6058vw, 60px) * 2);
+                    }
+                }
+                &:nth-child(9){
+                    animation: float 13s linear infinite;
+                    right: 5%;
+                    top: 17%;
+                    width: Min(5.0481vw, 84px);
+                    height: auto;
+        
+                    @include small-tablet{
+                        width: Min(5.0481vw, 84px);
+                    }
+
+                    @include mobile{
+                        top: 4%;
+                        width: calc(Min(5.0481vw, 84px) * 2);
+                    }
+                }
+           
+                }
         }
     }
 }

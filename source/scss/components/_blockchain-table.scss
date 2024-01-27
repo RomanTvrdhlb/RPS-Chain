@@ -1,7 +1,7 @@
 .blockchain-table{
     width: 100%;
     border-radius: 8px;
-    overflow: hidden;
+    // overflow: hidden;
     border: 1px solid var(--br-h);
     background: rgba(var(--bg-f),1.0);
     backdrop-filter: blur(7.556922435760498px);
@@ -18,6 +18,7 @@
     }
 
     &__top{
+        border-radius: 8px 8px 0 0;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr .55fr 1fr;

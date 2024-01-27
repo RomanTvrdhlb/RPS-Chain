@@ -76,7 +76,8 @@
         }
        
         &-flash{
-            animation:zoom 2s infinite, lightning 3s infinite, reveal 1.5s infinite ease-in;
+           
+            animation: lightning 7s infinite;
             position: absolute;
             left: 3%;
             top: 31.5%;
@@ -132,15 +133,16 @@
         }
     }
 }
-  
-    @keyframes reveal {
-        0% {
-        clip-path: polygon(0 0, 0 100%, 0 100%, 0 0); /* Изображение скрыто слева */
-        }
-        100% {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Изображение полностью видимо */
-        }
+
+@keyframes reveal {
+    0% {
+      clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
     }
+    100% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+  
   
     @keyframes zoom {
         0%, 100% {
@@ -151,26 +153,52 @@
         }
     }
 
+    // @keyframes lightning {
+    //     0%, 100% {
+    //       opacity: 1;
+    //       filter: none;
+    //     }
+      
+    //     2% {
+    //       filter: hue-rotate(180deg);
+    //     }
+      
+    //     6%, 9%, 35%, 55% {
+    //       opacity: 0;
+    //       filter: hue-rotate(180deg) blur(1px);
+    //     }
+      
+    //     8%, 15%, 20%, 30.1%, 45%, 75% {
+    //       filter: blur(0);
+    //       opacity: 1;
+    //     }
+      
+    //     55% {
+    //       opacity: 0;
+    //     }
+    //   }
     @keyframes lightning {
         0%, 100% {
           opacity: 1;
           filter: none;
         }
       
-        2% {
+        5%, 50%, 95% {
           filter: hue-rotate(180deg);
         }
       
-        6%, 9%, 35%, 55% {
+        10%, 15%, 20%, 30%, 40%, 45%, 60%, 70%, 80%, 85%, 90% {
           opacity: 0;
           filter: hue-rotate(180deg) blur(1px);
         }
       
-        8%, 15%, 20%, 30.1%, 45%, 75% {
+        25%, 55%, 75% {
           filter: blur(0);
+          opacity: 1;
         }
       
-        55% {
-          opacity: 0;
+        65% {
+          opacity: 0.3;
         }
       }
+      
