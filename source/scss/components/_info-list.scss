@@ -48,11 +48,14 @@
         }
 
         @include mobile{
+            height: fit-content;
             .info-card{
             &::after{
                 display: none;
             }
         }
         }
+
+      
     }
 }

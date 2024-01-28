@@ -7,10 +7,14 @@
   --body-bg: #01001D;
   --body-font-size: 16px;
   --content-width: 1664px;
-  --container-offset: 20px;
+  --container-offset: 6.4vw;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   @include tablet{
+    --container-offset: 20px;
+  }
+
+  @include small-tablet{
     --container-offset: 16px;
   }
 
@@ -68,6 +72,8 @@
 --gr-e: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%); // var(--gr-e);
 --gr-f: linear-gradient(90deg, rgba(6, 4, 51, 0.00) 1%, #060433 51.43%, rgba(6, 4, 51, 0.00) 100%); // var(--gr-f);
 --gr-g: linear-gradient(180deg, #0D1450 0%, #172178 100%); // var(--gr-g);
+--gr-h: linear-gradient(90deg, rgba(6, 4, 51, 0.00) 1%, #060433 51.43%, rgba(6, 4, 51, 0.00) 100%); // var(--gr-h);
+
 }
 
 

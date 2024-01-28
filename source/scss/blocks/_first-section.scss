@@ -23,7 +23,7 @@
     }
 
     &::after{
-        top: 0;
+        top: -4%;
         transform: translate(-50%, -50%);
         background: var(--gr-d);
 
@@ -57,8 +57,8 @@
         
 
         &-bg{
-            width: Min(63.7019vw, 1060px);
-            height: Min(57.3317vw, 954px);
+            width: Min(55.208vw, 1060px);
+            height: Min(49.688vw, 954px);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -105,7 +105,11 @@
     }
 
     @include mobile{
-        padding: clamp(20px, 14.419vw, 62px) 0 clamp(48px, 9.6154vw, 160px);
+        padding: clamp(20px, 10.764vw, 62px) 0 clamp(48px, 9.6154vw, 160px);
+    }
+
+    @include ios{
+        padding-top: 20px;
     }
 
     .main-button{
@@ -116,9 +120,10 @@
 
 
     &--mode{
-        padding: clamp(20px, 5.4087vw, 90px) 0 clamp(20px, 4.8077vw, 80px);
+        padding: clamp(20px, 5.4087vw, 90px) 0 0;
+        margin-bottom: clamp(20px, 4.8077vw, 80px);
         .main-text{
-            grid-gap: clamp(20px, 2.4038vw, 40px);
+            grid-gap: clamp(10px, 1.2019vw, 20px);
 
             p{
                 font-size: clamp(11px, 1.5024vw, 25px);
@@ -143,6 +148,12 @@
 
         &::after{
             transform: translate(-50%, -64%);
+        }
+
+        &::before{
+            z-index: 1;
+            bottom: 4px;
+            height: clamp(50px, 10.2163vw, 170px);
         }
     }
 }

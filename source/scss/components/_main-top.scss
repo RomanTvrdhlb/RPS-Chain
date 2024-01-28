@@ -2,19 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  grid-gap: clamp(16px, 2.4038vw, 40px);
+  grid-gap: clamp(14px, 1.0817vw, 18px);
 
   &__wrapp{
     @include mobile{
       width: 100%;
     }
   }
+
+  .main-button{
+    margin-top: clamp(2px, .4808vw, 8px);
+  }
  
   &__about{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    grid-gap: clamp(8px, 2.4038vw, 40px);
+    grid-gap: clamp(8px, 1.0817vw, 18px);
 
     p{
       font-size: clamp(14px, 1.5024vw, 25px);

@@ -1,7 +1,6 @@
 .blockchain-table{
     width: 100%;
     border-radius: 8px;
-    // overflow: hidden;
     border: 1px solid var(--br-h);
     background: rgba(var(--bg-f),1.0);
     backdrop-filter: blur(7.556922435760498px);
@@ -15,6 +14,12 @@
         display: flex;
         align-items: center;
         width: 100%;
+
+        @include mobile{
+            &:nth-child(n+6){
+                display: none;
+            }
+        }
     }
 
     &__top{
@@ -42,6 +47,7 @@
 
         @include mobile{
             grid-template-columns: .7fr 1fr .7fr;
+            justify-items: center;
         }
     }
 
@@ -57,6 +63,20 @@
 
         @include mobile{
             font-size: clamp(11px, 3.256vw, 14px);
+        }
+
+        @media (max-width: (450px)) {
+            width: fit-content;
+
+            &:first-child{
+                justify-self: start;
+            }
+            &:nth-child(3){
+                justify-self: end;
+            }
+            &:nth-child(3),&:first-child{
+                padding: 0 4px;                
+            }
         }
     }
 

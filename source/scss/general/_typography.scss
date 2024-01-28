@@ -38,7 +38,7 @@
   padding: 2px clamp(7px, .7813vw, 13px);
   margin-left: 10px;
   position: relative;
-  bottom: 9px;
+  bottom: clamp(5.5px, .9615vw, 16px);
   width: fit-content;
   border-radius: 16px;
   border: 1px solid var(--br-g);
@@ -73,9 +73,10 @@
 .main-text{
   display: flex;
   flex-direction: column;
-  grid-gap: clamp(14px, 1.9231vw, 32px);
+  grid-gap: clamp(14px, 1.3221vw, 22px);
   padding-bottom: clamp(32px, 2.4038vw, 40px);
   border-bottom: 3px dashed var(--br-e);
+  width: 100%;
 }
 
 .main-subtitle{
@@ -116,4 +117,27 @@ ul:not([class]){
       background-color: rgba(var(--cl-i),1.0);
     }
   } 
+}
+
+.counter-list{
+  counter-reset: li;
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(8px, .9615vw, 16px);
+
+  li{
+    display: inline-flex;
+  
+    &::before{
+      content: counter(li)'.';
+      counter-increment: li;
+      font-size: clamp(11px, 1.3221vw, 22px);
+      font-family: var(--font-family);
+      font-weight: 400;
+      color: rgba(var(--cl-e), 1);
+      font-style: normal;
+      line-height: 160%;
+      padding:0 clamp(6px, .7212vw, 12px);
+    }
+  }
 }

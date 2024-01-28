@@ -3,13 +3,18 @@ import { enableScroll } from '../functions/enable-scroll';
 import vars from '../_vars';
 
 import {toggleCustomClass, removeCustomClass, addCustomClass, removeClassInArray} from '../functions/customFunctions';
-const {overlay, burger, mobileMenu, header, navLinks} = vars;
+const {overlay, burger, mobileMenu, header, navLinks, footer} = vars;
 
 const currentPage = window.location.pathname.slice(1);
+
+if(currentPage === 'referral.html'){
+  toggleCustomClass(footer);
+}
 
 if(navLinks){
   navLinks.forEach(function(link) {
       const value = link.getAttribute('href');
+
       if (currentPage === value) { 
         addCustomClass(link);
       }
@@ -38,7 +43,7 @@ const hideMenuHandler = function(overlay, mobileMenu, burger) {
 if (overlay) {
   mobileMenuHandler(overlay,mobileMenu,burger);
   overlay.addEventListener('click', function(e){
-    e.target.classList.contains('h2o-overlay') ?
+    e.target.classList.contains('overlay') ?
     hideMenuHandler(overlay,mobileMenu,burger) : null
   });
 }
